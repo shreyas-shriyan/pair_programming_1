@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>custom jquery</title>
+    </head>
+
+    <body>
+        <div>hello world</div>
+        <div>hello state</div>
+        <div>hello district</div>
+        <script type="module">
+            import $ from "./index.js";
+            $("div").each(function(item){
+                console.log(this)
+                console.log(item.textContent)
+            }).each(function(item){
+                console.log("item :",item)
+            })
+        </script>
+    </body>
+</html>
